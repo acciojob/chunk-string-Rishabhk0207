@@ -1,4 +1,9 @@
 function stringChop(str, size) {
+
+	 if (str === null) {
+        return []; // Return empty array if input string is null
+    }
+
     let output = [];
     let i = 0;
     let arr = str.split("");
@@ -17,3 +22,4 @@ function stringChop(str, size) {
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
+ 
